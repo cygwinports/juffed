@@ -2,7 +2,7 @@ inherit qt4-cmake
 
 NAME="juffed"
 VERSION=0.10
-RELEASE=1
+RELEASE=2
 CATEGORY="Editors"
 SUMMARY="Qt advanced text editor"
 HOMEPAGE="http://juffed.com/"
