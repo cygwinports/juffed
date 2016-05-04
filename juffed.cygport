@@ -2,7 +2,7 @@ inherit qt4-cmake
 
 NAME="juffed"
 VERSION=0.10
-RELEASE=2
+RELEASE=3
 CATEGORY="Editors"
 SUMMARY="Qt advanced text editor"
 HOMEPAGE="http://juffed.com/"
@@ -10,10 +10,11 @@ SRC_URI="mirror://sourceforge/juffed/juffed-${VERSION}-1054.tar.bz2"
 PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/juffed.git/plain/juffed-0.10-cmake.patch
 	0.10-cmake-install.patch
+	0.10-no-undefined.patch
 "
 
 PKG_NAMES="${NAME} ${NAME}-devel"
-juffed_CONTENTS="etc/ usr/bin/ usr/lib/juffed/plugins/*.dll usr/share/"
+juffed_CONTENTS="usr/bin/ usr/lib/juffed/plugins/*.dll usr/share/"
 juffed_devel_REQUIRES="libQtCore4-devel libQtGui4-devel"
 juffed_devel_CONTENTS="usr/include/juffed/ usr/lib/libjuff*.dll.a"
 PKG_IGNORE="usr/lib/juffed/plugins/*.dll.a"
