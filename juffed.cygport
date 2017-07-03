@@ -2,7 +2,7 @@ inherit qt4-cmake
 
 NAME="juffed"
 VERSION=0.10
-RELEASE=3
+RELEASE=4
 CATEGORY="Editors"
 SUMMARY="Qt advanced text editor"
 DESCRIPTION="JuffEd is a free, cross-platform text editor for programmers and
